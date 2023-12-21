@@ -1,6 +1,6 @@
 /* Utility Classes */
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -227,14 +227,14 @@
 }
 
 .text-lg {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   line-height: 1.4;
   font-weight: normal;
   margin: 30px 0 20px;
 }
 
 .text-md {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.4;
   font-weight: normal;
   margin: 20px 0 20px;
