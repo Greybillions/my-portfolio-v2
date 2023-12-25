@@ -154,6 +154,15 @@ img {
 }
 
 /* Projects */
+#projects .project-one {
+  border-radius: 20px;
+}
+
+#projects .project-img img {
+  border: none;
+  border-radius: 20px;
+}
+
 .project-content {
   grid-template-columns: 1fr;
 }
@@ -328,6 +337,23 @@ img {
     font-size: 0.9rem;
   }
 
+  #about p {
+    padding: 20px;
+  }
+
+  #about .about-grid.py-3 {
+    padding: 0;
+  }
+
+  #hero .stack-logos ul.flex {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .project-one.p-3 {
+    padding: 20px;
+  }
+
   .contact-icon {
     gap: 2rem;
   }
@@ -343,5 +369,9 @@ img {
 
   .footer-content {
     text-align: center;
+  }
+
+  .btn {
+    padding: 7px 15px;
   }
 }
