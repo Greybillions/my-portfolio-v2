@@ -113,7 +113,7 @@ img {
 .hero-img {
   width: 250px;
   height: 250px;
-  background: url(../../img/hero.jpg) no-repeat center center/cover;
+  background: url(../../img/hero.webp) no-repeat center center/cover;
   /* background-size: 110%; */
   border: #333 solid 5px;
   border-radius: 60% 30% 70% 40%/60% 40% 30% 70%;
