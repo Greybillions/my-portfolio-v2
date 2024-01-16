@@ -50,11 +50,20 @@
       <div class="container">
         <div class="nav-content flex">
           <h3 class="nav-logo pointer text-md text-bold">Graham.dev</h3>
+          <div class="switch-container">
+            <input type="checkbox" id="switch" />
+            <label for="switch">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
           <ul class="nav-menu text-md text-bold flex">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="https://greyboyle.hashnode.dev/">Blog</a></li>
           </ul>
 
           <!-- Hamburger Button -->
@@ -66,13 +75,14 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="https://greyboyle.hashnode.dev/">Blog</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="bg-light">
+    <section id="hero" class="bg-light" data-section>
       <div class="container-sm">
         <div class="hero-content">
           <div class="hero-grid grid">
@@ -131,9 +141,9 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="bg-white">
-      <div class="container-sm">
-        <div class="about-grid grid my-3 py-3">
+    <section id="about" class="bg-white" data-section>
+      <div class="container">
+        <div class="about-grid grid my-3">
           <div class="img">
             <img
               src="img/about.webp"
@@ -160,19 +170,19 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="bg-light">
+    <section id="projects" class="bg-light" data-section>
       <div class="container-sm">
         <div class="project-content grid">
           <div class="project-header text-center">
-            <p class="lead text-md text-bold py-2">PROJECTS</p>
+            <p class="lead text-md text-bold">PROJECTS</p>
             <h3 class="text-md text-bold">
               Each project represents a distinctive aspect of development 🧩
             </h3>
           </div>
 
           <!-- Project 1 -->
-          <div class="project-one card bg-white p-3 mx-1">
-            <div class="project-img">
+          <div class="project-one card bg-white p-3 mx-1" data-section>
+            <div class="project-img pro-img">
               <a href="https://shopwithabby.vercel.app/" target="_blank"
                 ><img src="img/pro4.webp" alt="Growth App"
               /></a>
@@ -208,8 +218,8 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="project-one card bg-dark p-3 mx-1">
-            <div class="project-img">
+          <div class="project-one card bg-white p-3 mx-1" data-section>
+            <div class="project-img pro-img">
               <a href="https://growth-app-dev.vercel.app/" target="_blank"
                 ><img src="img/pro3.webp" alt="Growth App"
               /></a>
@@ -231,25 +241,24 @@
               </div>
               <div class="links text-center text-sm my-2">
                 <a
-                  class="px-1 text-light"
+                  class="px-1"
                   target="_blank"
                   href="https://github.com/Greybillions/saas-landing-page"
-                  >Code <i class="fab fa-github text-light"></i
+                  >Code <i class="fab fa-github"></i
                 ></a>
                 <a
-                  class="px-1 text-light"
+                  class="px-1"
                   href="https://growth-app-dev.vercel.app/"
                   target="_blank"
-                  >Live Demo
-                  <i class="fas fa-arrow-up-right-from-square text-light"></i
+                  >Live Demo <i class="fas fa-arrow-up-right-from-square"></i
                 ></a>
               </div>
             </div>
           </div>
 
           <!-- Project 3 -->
-          <div class="project-one card bg-white p-3 mx-1">
-            <div class="project-img">
+          <div class="project-one card bg-white p-3 mx-1" data-section>
+            <div class="project-img pro-img">
               <a href="https://news-grid-sigma.vercel.app/" target="_blank"
                 ><img src="img/pro2.webp" alt="News Grid"
               /></a>
@@ -291,35 +300,32 @@
     </section>
 
     <!-- Contact Section-->
-    <section id="contact" class="contact bg-white">
+    <section id="contact" class="contact bg-white" data-section>
       <div class="container-sm">
         <div class="contact-content px-3">
-          <div class="contact-text">
-            <p class="lead text-md text-bold">Contact</p>
-            <h3 class="text-md text-bold">Dont be shy to Hit me up! 👇</h3>
-          </div>
-          <div class="contact-icon text-sm flex">
-            <div class="contact-icon-grid flex">
-              <div class="circle-icon"><i class="fab fa-twitter"></i></div>
-              <div class="twitter-icon">
-                <h3 class="text-sm text-bold">X (formerly twitter)</h3>
-                <a href="https://twitter.com/Dev__Grey" target="_blank"
-                  >@Dev__Grey</a
-                >
-              </div>
-            </div>
-            <div class="contact-icon-grid flex">
-              <div class="circle-icon">
-                <i class="fa fa-envelope-circle-check"></i>
-              </div>
-              <div class="gmail-icon">
-                <h3 class="text-sm text-bold">MAIL</h3>
-                <a target="_blank" href="mailto:grahamboyle22@gmail.com"
-                  >grahamboyle22@gmail.com</a
-                >
-              </div>
-            </div>
-          </div>
+          <form action="https://formspree.io/f/xbjnlpoz" method="POST">
+            <h2>Let's Start A Project</h2>
+            <p>
+              I am open to <strong>Building Projects</strong> and
+              <strong>Technical Wrting</strong> opportunities. You can also
+              pitch me your <strong>Open-Source Project</strong>.
+            </p>
+            <label>What's your name?</label>
+            <input type="name" name="Name" required />
+            <label>What's your email?</label>
+            <input type="email" name="Email" required />
+            <label>What's service are you looking for?</label>
+            <input type="text" name="Requested Service" required />
+            <label>Tell me more about the project</label>
+            <textarea
+              name="Project Details"
+              rows="5"
+              cols="10"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button class="btn btn-submit">Submit</button>
+          </form>
         </div>
       </div>
     </section>
