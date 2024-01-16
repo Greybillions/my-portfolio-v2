@@ -363,6 +363,10 @@ img {
   outline: none;
 }
 
+.contact-content form textarea {
+  outline: none;
+}
+
 .btn-submit {
   background-color: var(--secondary-text-color);
   color: var(--white-color);
