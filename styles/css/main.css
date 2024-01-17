@@ -133,13 +133,12 @@ img {
 .switch-container label i {
   font-size: 18px;
 }
-.switch-container label .fa-sun {
-  color: gold;
+.switch-container label .fa-moon {
   transition: 0.3s;
   opacity: 1;
 }
-.switch-container label .fa-moon {
-  color: #fff;
+.switch-container label .fa-sun {
+  color: gold;
   transition: 0.3s;
   opacity: 0;
   transform: translateX(43px) rotate(250deg);
@@ -148,11 +147,11 @@ img {
   display: none;
 }
 
-.switch-container input:checked + label .fa-sun {
+.switch-container input:checked + label .fa-moon {
   transform: translateX(-43px) rotate(160deg);
   opacity: 0;
 }
-.switch-container input:checked + label .fa-moon {
+.switch-container input:checked + label .fa-sun {
   transform: translateX(0), rotate(0);
   opacity: 1;
 }
@@ -178,10 +177,10 @@ img {
   background: #222;
 }
 
-.switch-container label .fa-moon {
+.switch-container label .fa-sun {
   transform: translateX(43px);
 }
-.switch-container input:checked + label .fa-moon {
+.switch-container input:checked + label .fa-sun {
   transform: translateX(0);
 }
 
