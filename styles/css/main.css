@@ -357,14 +357,14 @@ img {
 }
 
 .contact-content form input {
-  padding: 10px 5px;
+  padding: 10px;
   margin-bottom: 20px;
   outline: none;
 }
 
 .contact-content form textarea {
   outline: none;
-  padding: 10px 10px;
+  padding: 20px;
 }
 
 .btn-submit {
@@ -415,7 +415,7 @@ img {
 }
 
 .mobile-menu li {
-  padding: 2rem 0;
+  padding: 15px 0;
 }
 
 .mobile-menu.show {
